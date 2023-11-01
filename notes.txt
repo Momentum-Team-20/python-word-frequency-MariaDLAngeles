@@ -29,3 +29,8 @@ we need to record all words that are being repeated
 those are old
 we need to add new words to old words
 we need to know the sum of new words and old words to know the final count
+
+---
+
+we want to take the value of the count
+and append the number of asterisks equal to the value of the count

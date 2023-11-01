@@ -42,11 +42,12 @@ def print_word_freq(file):
         # print(word_count)
 
         word_count[word] = word_count.get(word, 0) + 1
-    print(word_count)
+    # print(word_count)
 
     for word, count in word_count.items():
-        print(word, count)
-
+        # print(f'{word:>15s}', f'| {count}')
+        print(f'{word:>15s}', f'| {count}', count*'*')
+    
 
 
 
