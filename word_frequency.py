@@ -15,16 +15,24 @@ def print_word_freq(file):
     # print(text)
 #making our text a list
     text_list = text.split()
-    print(text_list)
+    # print(text_list)
 #removing punctuation
     table = str.maketrans("", "", string.punctuation)
-    stripped = [w.translate(table) for w in text_list]
-    print(stripped)
+    #do nothing, do nothing, remove punctuation
+    no_punc = [word.translate(table) for word in text_list]
+    #"we're going to translate every word in our text list" -- for every word in text_list we're running translate
+    # print(no_punc)
 #making our text lowercase
-    lower = [strip.lower() for strip in stripped]
-    print(lower)
+    lowercase = [word.lower() for word in no_punc]
+    # print(lowercase)
 #removing STOP_WORDS from the list
-    # nonstop = []
+    nonstop = []
+    for word in lowercase:
+        if word not in STOP_WORDS:
+            nonstop.append(word)
+    print(nonstop)
+
+
 
 
 

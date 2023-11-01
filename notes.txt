@@ -5,3 +5,10 @@
 #string.punctuation is a constant that provides a list of punctuation
 
 #maketrans creates an empty mapping table. The third argument lists all the characters to remove during the translation process
+
+----STOP words
+we need to go over each word in our text file and check if it's on our STOP_WORDS list
+if it is on our STOP_WORDS list, that word needs to be excluded
+if it's not in our STOP WORDS list, that word needs to go into a new list
+
+#we need an empty array to hold the words we do want
