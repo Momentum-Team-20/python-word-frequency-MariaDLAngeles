@@ -7,19 +7,24 @@ STOP_WORDS = [
 def print_word_freq(file):
     """Read in `file` and print out the frequency of words in that file."""
     # open(file, 'r')
+#string is a built in module for string manipulation 
     import string
+#opening and reading our file
     with open(file, 'r') as reader:
         text = reader.read()
     # print(text)
+#making our text a list
     text_list = text.split()
     print(text_list)
+#removing punctuation
     table = str.maketrans("", "", string.punctuation)
     stripped = [w.translate(table) for w in text_list]
     print(stripped)
+#making our text lowercase
     lower = [strip.lower() for strip in stripped]
     print(lower)
-
-
+#removing STOP_WORDS from the list
+    # nonstop = []
 
 
 

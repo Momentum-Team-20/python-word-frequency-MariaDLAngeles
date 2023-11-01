@@ -1,0 +1,7 @@
+#string is a built-in module/library that contains some constants, utility function, and classes for string manipulation. We have to import it before using any of its constants and classes. 
+
+#text_list is our new variable. We are taking the 'text' from our reader and using the split() method to split our string into a list. The default separator for split is whitespace, but you can define a different one.
+
+#string.punctuation is a constant that provides a list of punctuation
+
+#maketrans creates an empty mapping table. The third argument lists all the characters to remove during the translation process
