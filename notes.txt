@@ -12,3 +12,20 @@ if it is on our STOP_WORDS list, that word needs to be excluded
 if it's not in our STOP WORDS list, that word needs to go into a new list
 
 #we need an empty array to hold the words we do want
+
+
+----go through the file word by word and keep a count of how often each word is used
+
+we need to go through our list
+we need to record all words that are being used for the first time
+and put them in a list
+those words would be 'new' or new list
+we need to record all words that are being repeated and how many times
+
+we need to go through our list
+we need to record all words that are being used for the first time
+those words are new
+we need to record all words that are being repeated
+those are old
+we need to add new words to old words
+we need to know the sum of new words and old words to know the final count
